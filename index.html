@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zNova</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@800&family=Josefin+Sans:wght@100&display=swap');
+        * { margin: 0; }
+        :root { --zNovaColor: #ff7e73; --learningHubColor: #776464; }
+        .logo-container {
+            width: 512px; height: 512px;
+            border: 1px solid var(--zNovaColor);
+            margin: auto;
+            position: relative;
+        }
+        .logo {
+            width: 100%; height: 100%;
+            background:
+                radial-gradient(1q,#0000,140px,#fff)0-60px,
+                repeating-linear-gradient(#fff 0 9q,var(--learningHubColor) 0 12q)space 0 200px,
+                radial-gradient(1q,var(--zNovaColor),60px,#0000)0-60px,
+                radial-gradient(1q,var(--learningHubColor),140px,#0000)0-60px
+            ;
+        }
+        .znova, .learning-hub {
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+        }
+        .znova {
+            font: 100px 'Eczar', serif;
+            top: 80%;
+            color: var(--zNovaColor);
+        }
+        .learning-hub {
+            font: 30px 'Josefin Sans', sans-serif;
+            top: 90%;
+            color: var(--learningHubColor);
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="logo"></div>
+        <div class="znova">zNova</div>
+        <div class="learning-hub">Learning Hub</div>
+    </div>
+</body>
+</html>
